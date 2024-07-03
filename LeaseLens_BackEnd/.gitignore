@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+.env.development
+.env.production
+
+# 파일 정보
+uploads/
+
+#보안
+package-lock.json
+
+#기타
+.DS.STORE
