@@ -27,7 +27,7 @@
 
 배포 : AWS EC2, AWS RDS
 
-기타 : Axios, AWS S3, sequelize
+기타 : Axios, AWS S3, sequelize, postman
 
 소통 및 개발환경 : slack, notion, Figma, Github, vsCode
 
@@ -73,6 +73,8 @@
   - 리뷰 생성 시, 생성 일시와 사용자 인덱스 등 함께 저장
 
 ### 검색
+<img width="500" alt="스크린샷 2024-07-04 오전 11 25 44" src="https://github.com/joonyy/LeaseLens/assets/29936443/e6850186-e866-4a4b-83dc-fc0ec5dd5996">
+
 - category를 query문으로 전달받아, 전송해주는 기능.
   - req.query.category를 통해 검색어를 전달받는다.
   - 검색 조건(conditon)을 설정해준다. 
@@ -82,4 +84,12 @@
 - review 페이지
   - 작성일 기준으로 내림차순 정렬을 하여, 최신 리뷰가 상단에 오도록 함.
  
+
 ### 찜하기
+
+<img width="500" alt="스크린샷 2024-07-04 오전 11 42 20" src="https://github.com/joonyy/LeaseLens/assets/29936443/cef10a14-e194-4397-91cb-d0807c8bb2b4">
+
+- 제품 테이블의 prod_likes 속성을 프론트에 전달.
+  - 좋아요 버튼 클릭 시, 찜 테이블에 값이 추가가 된다.
+- sequelize 검색 기능을 통해, 유저의 마이페이지에서 찜한 제품을 찾아준다.
+- 찜이 되어있는 제품이었을 경우 찜 해제 및 찜 테이블에 값 삭제, 아닐 경우 찜 추가 및 찜 테이블에 값 추가
