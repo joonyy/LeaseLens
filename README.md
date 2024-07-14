@@ -107,7 +107,7 @@
 
 ### 디렉토리 구조
 ```bash
-backend
+LeaseLens
 ├── .gitignore
 ├── README.md
 └── backend
